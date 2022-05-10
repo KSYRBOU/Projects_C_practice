@@ -2,9 +2,9 @@
 //какое число большее, а какое меньшее.
 
 Console.WriteLine("Enter first digit:");
-double Digit_1 = int.Parse(Console.ReadLine());
+double Digit_1 = double.Parse(Console.ReadLine());
 Console.WriteLine("Enter second digit:");
-double Digit_2 = int.Parse(Console.ReadLine());
+double Digit_2 = double.Parse(Console.ReadLine());
 if (Digit_1 > Digit_2)
 {
     Console.Write("The biggest digit is:");
