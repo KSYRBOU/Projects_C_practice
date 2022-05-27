@@ -12,17 +12,14 @@ string Check_Palindrome(int FirstDigit, int SecondDigit, int ThirdDigit, int Tho
 
 int[] Array = new int[5];
 
-Console.WriteLine("Enter 5 digits:");
-Console.WriteLine("Enter digit 1:");
-Array[0] = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter digit 2:");
-Array[1] = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter digit 3:");
-Array[2] = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter digit 4:");
-Array[3] = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter digit 5:");
-Array[4] = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter 5 digits number:");
+int Number = Convert.ToInt32(Console.ReadLine());
+
+Array[0] = (Number - (Number % 10000)) / 10000;
+Array[1] = (((Number - (Number % 1000)) / 1000) % 10);
+Array[2] = (((Number - (Number % 100)) / 100) % 10);
+Array[3] = (((Number - (Number % 10)) / 10) % 10);
+Array[4] = Number % 10;
 
 string Result = Check_Palindrome(Array[0], Array[1], Array[2], Array[3], Array[4]);
 
