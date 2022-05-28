@@ -5,7 +5,11 @@
 
 Console.WriteLine("Enter size of array:");
 int Number = Convert.ToInt32(Console.ReadLine());
-
+if (Number <= 0) 
+{
+    Console.WriteLine("Enter size of array:");
+    Number = Convert.ToInt32(Console.ReadLine());
+}
 int[] Arr = new int[Number];
 int Count = -1;
 int CountForEven = 0;
