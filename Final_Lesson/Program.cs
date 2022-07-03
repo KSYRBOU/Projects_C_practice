@@ -16,3 +16,12 @@ string[] GetArray(int a)
     return array;
 }
 
+//Метод печати одномерного массива типа string
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        Console.WriteLine(array[i]);
+    }
+}
