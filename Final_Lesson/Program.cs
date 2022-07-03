@@ -41,3 +41,10 @@ string[] ChangeArray(string[] existArray)
     return result;
 }
 
+Console.WriteLine("Ввведите количество элементов массива: ");
+int m = Convert.ToInt32(Console.ReadLine());
+
+string[] arrResult = GetArray(m);
+PrintArray(arrResult);
+string[] newResult = ChangeArray(arrResult);
+PrintArray(newResult);
