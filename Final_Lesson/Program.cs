@@ -5,5 +5,14 @@
 
 //Метод наполнения одномерного массива типа string
 
-
+string[] GetArray(int a)
+{
+    string[] array = new string[a];
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        Console.WriteLine($"Ведите {i + 1} элемент массива: ");
+        array[i] = Console.ReadLine();
+    }
+    return array;
+}
 
